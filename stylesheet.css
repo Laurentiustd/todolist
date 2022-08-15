@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #292C35;
+    color: white;
+}
+
+header > .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.main > h1{
+    font-family: sans-serif;
+    padding:10px;
+}
+
+.main > input{
+    width: 60em;
+    height: 5em;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgb(61, 61, 61);
+    border: 2px solid rgb(168, 247, 168);
+    color: white;
+}
+
+.main .add{
+    width: 7em;
+    height: 3em;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(61, 61, 61);
+    border: 2px solid rgb(168, 247, 168);
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .tasks h2{
+    font-family: sans-serif;
+    padding: 10px;
+    opacity: 0;
+}
+
+.container .tasks .task{
+    margin-top: 10px;
+}
+
+.container .tasks .task input{
+    width: 30em;
+    height: 3em;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: 3px solid rgb(94, 2, 161);
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+.container .tasks .task .edit,
+.container .tasks .task .delete,
+.container .tasks .task .save
+{
+    width: 5em;
+    height: 3em;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid rgb(94, 2, 161);
+    background-color: rgb(61, 61, 61);
+    color: white;
+
+}
+
+
+
+
+@media screen and (max-width:500px) {
+    .main > input{
+        width: 70vw;
+        height: 3em;
+    }
+
+    .container .tasks .task input{
+        width: 60vw;
+        height: 3em;
+    }
+}
